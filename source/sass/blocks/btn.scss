@@ -2,16 +2,26 @@
   display: inline-flex;
   padding: 10px 20px;
 
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 700;
   color: $color-default-white;
+  text-transform: uppercase;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: transparent;
+  border: 2px solid $color-default-white;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--secondary {
+    color: $color-sapphire;
+    border-color: $color-sapphire;
   }
 
   &:disabled {
