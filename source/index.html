@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="page-wrapper">
+    <div class="wrapper">
       <header>
         <div class="main-header container">
           <div class="main-header__logo-container">
@@ -35,12 +35,259 @@
           </div>
         </div>
       </header>
+
       <main>
-        <section class="intro">
-          <div class="container">
+        <section class="hero">
+          <div class="hero__container container">
+            <h1>Фитнес центр</h1>
+            <h2>Омск</h2>
+            <ul>
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class="hero__button btn" href="#membership">Купить абонемент</a>
+            <div class="hero__image-container">
+              <picture>
+                <source srcset="img/hero/hero-desktop.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="556" type="image/webp" media="(min-width: 1200px)">
+                <img src="img/hero/hero-tablet.jpg" width="324" height="390" srcset="img/hero/hero-tablet@2x.jpg 2x" alt="Мужчина атлетического телосложения в футболке с эмблемой Супермена.">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="gym">
+          <div class="gym__container container">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+              Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              <div class="gym__image-container">
+                <picture>
+                  <source srcset="img/gym/gym-desktop.jpg 1x, img/gym/gym-desktop@2x.jpg 2x" width="660" height="401" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/gym/gym-tablet.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345" type="image/webp" media="(min-width: 768px)">
+                  <img src="img/gym/gym-mobile.jpg" width="320" height="313" srcset="img/gym/gym-mobile@2x.jpg 2x" alt="Тренажерный зал фитнес-центра Supergym.">
+                </picture>
+              </div>
+              <div class="gym__video-container">
+                <picture>
+                  <source srcset="img/gym/poster-desktop.jpg 1x, img/gym/poster-desktop@2x.jpg 2x" width="364" height="228" type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="img/gym/poster-tablet.jpg 1x, img/gym/poster-tablet@2x.jpg 2x" width="266" height="167" type="image/webp" media="(min-width: 768px)">
+                  <img src="img/gym/poster-mobile.jpg" width="320" height="167" srcset="img/gym/poster-mobile@2x.jpg 2x" alt="Видео-экскурсия по тренажерному залу фитнес-центра Supergym.">
+                </picture>
+                <iframe width="364" height="228" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+                <button class="gym__video-button btn"></button>
+              </div>
+          </div>
+        </section>
+
+        <section class="membership">
+          <div class="membership__container container" id="membership">
+            <h2>Абонементы</h2>
+
+            <!-- Tabs -->
+
+            <div class="membership__image-container">
+              <picture>
+                <source srcset="img/membership/weight-plate-desktop.png 1x, img/membership/weight-plate-desktop@2x.png 2x" width="321" height="384" type="image/webp" media="(min-width: 1200px)">
+                <img src="img/membership/weight-plate-tablet.png" width="289" height="345" srcset="img/membership/weight-plate-tablet@2x.png 2x" alt="Два диска красного цвета для штанги.">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="competition">
+          <div class="competition__container container">
+            <h2>Super Games</h2>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <time datetime="2019-03-07 12:00">
+              <table>
+                <tr>
+                  <td>Дата</td>
+                  <td><span>7</span> марта 2019</td>
+                </tr>
+                <tr>
+                  <td>Время</td>
+                  <td>12:00</td>
+                </tr>
+              </table>
+            </time>
+            <a href="#" class="competition__button btn">Заполнить заявку</a>
+            <div class="competition__image-container">
+              <picture>
+                <source srcset="img/competition/sportsman-desktop.jpg 1x, img/competition/sportsman-desktop@2x.jpg 2x" width="660" height="500" type="image/webp" media="(min-width: 1200px)">
+                <source srcset="img/competition/sportsman-tablet.jpg 1x, img/competition/sportsman-tablet@2x.jpg 2x" width="386" height="292" type="image/webp" media="(min-width: 768px)">
+                <img src="img/competition/sportsman-mobile.jpg" width="290" height="292" srcset="img/competition/sportsman-mobile@2x.jpg 2x" alt="Спортсмен отжимается в облаке сухой магнезии.">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="coach">
+          <div class="coach__container container swiper">
+            <h2>Тренеры</h2>
+            <ol class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Анна Павлова</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide1.jpg" width="260" height="294" srcset="img/coach/slide1@2x.jpg 2x" alt="Анна Павлова.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Алексей Лавров</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide2.jpg" width="260" height="294" srcset="img/coach/slide2@2x.jpg 2x" alt="Алексей Лавров.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Александр Пашков</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide3.jpg" width="260" height="294" srcset="img/coach/slide3@2x.jpg 2x" alt="Александр Пашков.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Мария Кетова</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide4.jpg" width="260" height="294" srcset="img/coach/slide4@2x.jpg 2x" alt="Мария Кетова.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Анна Павлова</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide1.jpg" width="260" height="294" srcset="img/coach/slide1@2x.jpg 2x" alt="Анна Павлова.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Алексей Лавров</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide2.jpg" width="260" height="294" srcset="img/coach/slide2@2x.jpg 2x" alt="Алексей Лавров.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Александр Пашков</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide3.jpg" width="260" height="294" srcset="img/coach/slide3@2x.jpg 2x" alt="Александр Пашков.">
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="coach__description">
+                  <h3>Мария Кетова</h3>
+                  <span>Crossfit</span>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+                <div class="coach__image-container">
+                  <img src="img/coach/slide4.jpg" width="260" height="294" srcset="img/coach/slide4@2x.jpg 2x" alt="Мария Кетова.">
+                </div>
+              </li>
+            </ol>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="features__container container">
+            <h2>Наши преимущества</h2>
+            <ul>
+              <li>
+                <h3></h3>
+                <p><span></span></p>
+                <p></p>
+              </li>
+              <li>
+                <h3></h3>
+                <p><span></span></p>
+                <p></p>
+              </li>
+              <li>
+                <h3></h3>
+                <p><span></span></p>
+                <p></p>
+              </li>
+              <li>
+                <h3></h3>
+                <p><span></span></p>
+                <p></p>
+              </li>
+              <li>
+                <h3></h3>
+                <p><span></span></p>
+                <p></p>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>
