@@ -6,6 +6,11 @@
   color: $color-default-white;
   background: $dark-cerulean-to-venetian-red;
 
+  @include vp-1199 {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   h1 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -22,6 +27,14 @@
 
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    @include vp-1199 {
+      margin-right: 0;
+      margin-bottom: 10px;
+      margin-left: 23px;
+      font-size: 72px;
+      text-transform: none;
+    }
   }
 
   h2 {
@@ -38,6 +51,12 @@
     letter-spacing: 1px;
     text-transform: lowercase;
     text-align: end;
+
+    @include vp-1199 {
+      font-size: 34px;
+      margin-right: 4px;
+      margin-bottom: -42px;
+    }
   }
 
   ul {
@@ -55,6 +74,11 @@
     font-size: 14px;
     line-height: 150%;
     text-align: right;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -64,14 +88,27 @@
   justify-self: flex-end;
   align-self: center;
   transform: translateY(3px);
+  @include vp-1199 {
+    transform: unset;
+  }
 }
 
 .hero__button {
   padding: 18px 60px;
+
+  @include vp-1199 {
+    padding: 18px 28px;
+    letter-spacing: 1px;
+    border-width: 3px;
+  }
 }
 
 .hero__image-container {
   grid-column: 3 / -1;
   grid-row: 1 / 4;
   margin-left: 63px;
+
+  @include vp-1199 {
+    margin-left: 30px;
+  }
 }
