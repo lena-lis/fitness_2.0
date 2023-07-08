@@ -1,0 +1,36 @@
+.socials {
+  max-width: 100px;
+  margin-bottom: -8px;
+
+  li {
+    min-width: 25px;
+    min-height: 25px;
+    margin-right: 11px;
+    margin-bottom: 8px;
+
+    a {
+      position: relative;
+      min-width: 25px;
+      min-height: 25px;
+
+      line-height: 0;
+
+      background-color: $color-default-white;
+      border-radius: 50%;
+
+      svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+  };
+
+  li:nth-of-type(3),
+  li:last-of-type {
+    margin-right: 0;
+  }
+}
