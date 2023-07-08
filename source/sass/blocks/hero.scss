@@ -11,6 +11,10 @@
     padding-bottom: 82px;
   }
 
+  @include vp-767 {
+    padding-top: 108px;
+  }
+
   h1 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -35,6 +39,12 @@
       font-size: 72px;
       text-transform: none;
     }
+
+    @include vp-767 {
+      grid-column: 1 / -1;
+      margin: 0;
+      transform: translateY(14px);
+     }
   }
 
   h2 {
@@ -57,6 +67,13 @@
       margin-right: 4px;
       margin-bottom: -42px;
     }
+
+    @include vp-767 {
+      grid-column: 3 / 4;
+      font-size: 28px;
+      margin-right: 2px;
+      margin-bottom: 0;
+     }
   }
 
   ul {
@@ -76,7 +93,7 @@
     text-align: right;
 
     @include vp-1199 {
-      margin-bottom: 32px;
+      margin-bottom: 19px;
       margin-left: 0;
     }
   }
@@ -88,8 +105,16 @@
   justify-self: flex-end;
   align-self: center;
   transform: translateY(3px);
+
   @include vp-1199 {
     transform: unset;
+  }
+
+  @include vp-767 {
+   grid-column: 1 / -1;
+   justify-self: auto;
+   margin-top: 30px;
+  transform: translateY(4px);
   }
 }
 
@@ -101,6 +126,15 @@
     letter-spacing: 1px;
     border-width: 3px;
   }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 18px 80px;
+    padding-bottom: 20px;
+    justify-content: center;
+    letter-spacing: 0.6px;
+    border-width: 4px;
+  }
 }
 
 .hero__image-container {
@@ -110,5 +144,9 @@
 
   @include vp-1199 {
     margin-left: 30px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
