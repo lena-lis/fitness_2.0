@@ -38,7 +38,7 @@
 
       <main>
 
-        <!--------------------------- HERO ------------------------>
+        <!--------------------HERO ------------------------>
 
         <section class="hero">
           <div class="hero__container container">
@@ -96,52 +96,57 @@
           </div>
         </section>
 
+        <!-------------------Абонементы --------------------------->
+
         <section class="membership">
           <div class="membership__container container" id="membership" data-tabs="element for-load">
             <h2>Абонементы</h2>
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
               <div class="tabs__controls" data-tabs="controls">
-                <button class="tabs__control btn btn--secondary is-active" type="button" data-tabs="control">1 месяц</button>
-                <button class="tabs__control btn btn--secondary" type="button" data-tabs="control">6 месяцев</button>
-                <button class="tabs__control btn btn--secondary" type="button" data-tabs="control">12 месяцев</button>
+                <button class="tabs__control btn is-active" type="button" data-tabs="control">1 месяц</button>
+                <button class="tabs__control btn" type="button" data-tabs="control">6 месяцев</button>
+                <button class="tabs__control btn" type="button" data-tabs="control">12 месяцев</button>
               </div>
               <div class="tabs__content" data-tabs="content">
                 <div class="tabs__element" data-tabs="element">
                   <ul>
                     <li>
                       <h3>С тренером</h3>
-                      <span>12 занятий</span>
+                      <p>12 занятий</p>
                       <div class="membership__price-container">
-                        <span>5000</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="5000">5000
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                      </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
+                      <p>с 8:00 до 17:00 </p>
                       <div class="membership__price-container">
-                        <span>1700</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="1700">1700
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary is-active" href="#" >Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary is-active" href="#" >Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00</span>
+                      <p>с 8:00 до 22:00</p>
                       <div class="membership__price-container">
-                        <span>2700</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="2700">2700
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
                   </ul>
                 </div>
@@ -149,38 +154,41 @@
                   <ul>
                     <li>
                       <h3>С тренером</h3>
-                      <span>72 занятия</span>
+                      <p>72 занятия</p>
                       <div class="membership__price-container">
-                        <span>25500</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="25500">25500
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
+                      <p>с 8:00 до 17:00 </p>
                       <div class="membership__price-container">
-                        <span>8700</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="8700">8700
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary is-active" href="#" >Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary is-active" href="#" >Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00</span>
+                      <p>с 8:00 до 22:00</p>
                       <div class="membership__price-container">
-                        <span>13800</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="13800">13800
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
                   </ul>
                 </div>
@@ -188,38 +196,41 @@
                   <ul>
                     <li>
                       <h3>С тренером</h3>
-                      <span>144 занятия</span>
+                      <p>144 занятия</p>
                       <div class="membership__price-container">
-                        <span>48000</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="48000">48000
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Дневной</h3>
-                      <span>с 8:00 до 17:00 </span>
+                      <p>с 8:00 до 17:00 </p>
                       <div class="membership__price-container">
-                        <span>16300</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="16300">16300
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary is-active" href="#" >Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary is-active" href="#" >Купить абонемент</a>
                     </li>
 
                     <li>
                       <h3>Полный день</h3>
-                      <span>с 8:00 до 22:00</span>
+                      <p>с 8:00 до 22:00</p>
                       <div class="membership__price-container">
-                        <span>25900</span>
-                        <svg aria-hidden="true" focusable="false" width="30" height="42">
-                          <use href="img/sprite.svg#rouble"></use>
-                        </svg>
+                        <span data-parent="25900">25900
+                          <svg aria-hidden="true" focusable="false" width="30" height="42">
+                            <use href="img/sprite.svg#rouble"></use>
+                          </svg>
+                        </span>
                       </div>
-                      <a class="btn btn--secondary" href="#">Купить абонемент</a>
+                      <a class="membership__button btn btn--secondary" href="#">Купить абонемент</a>
                     </li>
                   </ul>
                 </div>
