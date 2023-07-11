@@ -1,0 +1,97 @@
+.competition__container {
+  display: grid;
+  grid-template-columns: 500px 660px;
+  justify-content: center;
+  padding-top: 47px;
+}
+
+.competition__description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+  padding: 80px 78px 87px;
+  color: $color-default-white;
+  background-color: $color-torch-red-1;
+
+  h2 {
+    margin: 0;
+    font-family: $ff-alumni;
+    font-size: 82px;
+    line-height: 96%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.46px;
+    transform: translate(2px, 6px);
+  }
+
+  p {
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 18px;
+  }
+
+  time {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    margin-bottom: 3px;
+    transform: translateX(2px);
+
+    tr {
+      display: flex;
+      flex-direction: column;
+
+      td:first-of-type {
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      td:nth-of-type(2) {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        font-size: 14px;
+        line-height: normal;
+        transform: translateY(-12px);
+
+        span {
+          font-size: 40px;
+          font-weight: 700;
+        }
+      }
+    }
+    tr:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+
+    tr::before {
+
+    }
+  }
+
+  a {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+    min-height: 67px;
+    padding: 23px;
+    padding-top: 26px;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    transform: translateY(2px);
+
+    &:hover {
+      color: $color-egyptian-blue;
+      background-color: $color-default-white;
+    }
+
+    &:active {
+      color: $color-sapphire;
+      background-color: $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
