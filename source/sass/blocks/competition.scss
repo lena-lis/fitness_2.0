@@ -19,17 +19,19 @@
 .competition__description {
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   column-gap: 50px;
   padding: 80px 78px 87px;
   color: $color-default-white;
   background-color: $color-torch-red-1;
 
   @include vp-1199 {
-    padding: 51px 45px;
+    column-gap: 32px;
+    padding: 46px 45px 51px;
   }
 
   @include vp-767 {
-    padding: 50px 44px;
+    padding: 45px 44px 52px;
   }
 
   h2 {
@@ -45,6 +47,7 @@
     @include vp-1199 {
       font-size: 48px;
       letter-spacing: 1.44px;
+      margin-left: 4px;
     }
   }
 
@@ -55,8 +58,15 @@
     font-size: 18px;
 
     @include vp-1199 {
-      margin-bottom: 36px;
+      margin-bottom: 0;
+      padding-top: 4px;
       font-size: 12px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 12px;
+      padding-top: 0;
+      transform: translateY(-12px);
     }
   }
 
@@ -66,15 +76,23 @@
     margin-bottom: 3px;
     transform: translateX(2px);
 
+    @include vp-1199 {
+      margin-bottom: 0;
+      line-height: normal;
+    }
+
     tr {
+      position: relative;
       display: flex;
       flex-direction: column;
+      width: min-content;
 
       td:first-of-type {
         margin-bottom: 15px;
         font-size: 18px;
 
         @include vp-1199 {
+          margin-bottom: 14px;
           font-size: 12px;
         }
       }
@@ -88,6 +106,7 @@
         transform: translateY(-12px);
 
         @include vp-1199 {
+          column-gap: 4px;
           font-size: 10px;
         }
 
@@ -103,10 +122,22 @@
     }
     tr:not(:last-of-type) {
       margin-bottom: 4px;
+
+      @include vp-1199 {
+        margin-bottom: -8px;
+      }
     }
 
     tr::before {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      border: 1px solid $color-default-white;
+      content: "";
 
+      @include vp-1199 {
+        top: 18px;
+      }
     }
   }
 
@@ -122,8 +153,15 @@
     transform: translateY(2px);
 
     @include vp-1199 {
-      padding: 16px 53px;
+      min-height: 39px;
+      padding: 10px 50px;
       font-size: 10px;
+      letter-spacing: 0.5px;
+      border-width: 2px;
+    }
+
+    @include vp-767 {
+      padding: 12px 50px;
     }
 
     &:hover {
@@ -138,6 +176,18 @@
 
     &:disabled {
       opacity: 0.5;
+    }
+  }
+}
+
+.competition__image-container {
+  background-color: $color-midnight-express;
+
+  img {
+    @include vp-767 {
+      width: 100%;
+      max-height: 292px;
+      object-fit: cover;
     }
   }
 }
