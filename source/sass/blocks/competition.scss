@@ -2,15 +2,18 @@
   display: grid;
   grid-template-columns: 500px 660px;
   justify-content: center;
+  margin-bottom: 106px;
   padding-top: 47px;
 
   @include vp-1199 {
     grid-template-columns: 292px 386px;
+    margin-bottom: 100px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 63px;
     padding-top: 70px;
     padding-bottom: 35px;
   }
