@@ -6,6 +6,11 @@
     padding: 105px 45px 93px;
   }
 
+  @include vp-767 {
+    padding: 71px 0 64px;
+    text-align: center;
+  }
+
   h2 {
     margin: 0 auto;
     margin-bottom: 75px;
@@ -21,6 +26,11 @@
       font-size: 42px;
       letter-spacing: 1.26px;
     }
+
+    @include vp-767 {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 
   ul {
@@ -29,7 +39,6 @@
     grid-template-rows: repeat(2, auto);
     column-gap: 60px;
     row-gap: 159px;
-    grid-auto-flow: column;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -40,6 +49,10 @@
       grid-template-rows: repeat(3, auto);
       column-gap: 54px;
       row-gap: 43px;
+    }
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -53,14 +66,24 @@
       column-gap: 29px;
       row-gap: 4px;
     }
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 0 47px;
+    }
   }
 
   li:first-of-type,
   li:nth-of-type(2) {
-    padding-left: 18px;
+    // padding-left: 18px;
 
     @include vp-1199 {
       padding-left: 0;
+    }
+
+    @include vp-767 {
+      padding-left: 47px;
     }
   }
 
@@ -83,6 +106,13 @@
       padding: 45px 135px 39px;
     }
 
+    @include vp-767 {
+      width: 100%;
+      max-width: unset;
+      margin-bottom: 7px;
+      padding: 48px 47px 43px;
+    }
+
     p {
       color: $color-default-white;
 
@@ -102,6 +132,10 @@
         @include vp-1199 {
           margin-top: 8px;
         }
+
+        @include vp-767 {
+          margin-top: 0;
+        }
       }
     }
 
@@ -115,6 +149,12 @@
         margin-left: -5px;
         font-size: 74px;
         letter-spacing: normal;
+      }
+
+      @include vp-767 {
+        display: block;
+        line-height: 23px;
+        transform: translateY(20px);
       }
     }
   }
@@ -135,6 +175,12 @@
     font-size: 16px;
     line-height: 140%;
     font-weight: 300;
+
+    @include vp-767 {
+      margin-top: -5px;
+      letter-spacing: -0.1px;
+      word-spacing: 0.5px;
+    }
   }
 
   p:first-of-type {
@@ -142,6 +188,10 @@
     grid-row: 1 / 3;
     font-size: 14px;
     color: $color-persian-blue;
+
+    @include vp-767 {
+      order: -1;
+    }
   }
 
   span {
