@@ -1,5 +1,5 @@
 .features__container {
-  padding: 130px 163px 129px;
+  padding: 129px 163px 125px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -22,12 +22,13 @@
 
     @include vp-1199 {
       margin-bottom: 59px;
-      margin-left: 0;
+      margin-left: -22px;
       font-size: 42px;
       letter-spacing: 1.26px;
     }
 
     @include vp-767 {
+      margin-left: -17px;
       font-size: 32px;
       letter-spacing: 0.96px;
     }
@@ -75,8 +76,8 @@
   }
 
   li:first-of-type,
-  li:nth-of-type(2) {
-    // padding-left: 18px;
+  li:nth-of-type(4) {
+    padding-left: 18px;
 
     @include vp-1199 {
       padding-left: 0;
@@ -88,6 +89,7 @@
   }
 
   li:nth-of-type(3) {
+    position: relative;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     display: flex;
@@ -103,7 +105,8 @@
       grid-row: 2 / 3;
       max-width: 442px;
       margin: 0 auto;
-      padding: 45px 135px 39px;
+      margin-bottom: 3px;
+      padding: 45px 137px 39px;
     }
 
     @include vp-767 {
@@ -156,6 +159,27 @@
         line-height: 23px;
         transform: translateY(20px);
       }
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 50%;
+      width: 340px;
+      border-bottom: 2px solid $color-crimson-opacity;
+      content: "";
+
+      @include vp-1199 {
+        display: none;
+      }
+    }
+
+    &::after {
+      right: 125%;
+    }
+
+    &::before {
+      left: 125%;
     }
   }
 

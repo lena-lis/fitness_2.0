@@ -5,6 +5,7 @@ const coachSlider = new Swiper('.coach__slider', {
   loop: true,
   breakpoints: {
     768: {
+      initialSlide: 2,
       slidesPerView: 2,
       spaceBetween: 30,
     },
