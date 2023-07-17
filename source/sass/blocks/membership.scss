@@ -267,10 +267,19 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active  {
     color: $color-default-white;
     background: $torch-red-to-cobalt;
     border-image: $torch-red-to-cobalt 1;
+  }
+
+  &:active {
+    color: $color-white-opacity;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
