@@ -3,6 +3,11 @@
   padding-bottom: 30px;
   background-color: $color-ghost-white;
 
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   h2 {
     margin: 0;
     margin-bottom: 39px;
@@ -10,6 +15,12 @@
     font-size: 54px;
     line-height: normal;
     letter-spacing: 1.62px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      text-align: center;
+    }
   }
 }
 
@@ -17,12 +28,23 @@
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 40px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .faq__controls {
   flex-direction: column;
   justify-content: start;
   gap: 10px;
+
+  @include vp-1199 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 39px;
+  }
 }
 
 .faq__control {
@@ -37,6 +59,10 @@
 
   border: 1px solid $color-sapphire-opacity-light;
   opacity: 1;
+
+  @include vp-1199 {
+    min-width: 162px;
+  }
 
   &.is-active,
   &:active {
@@ -58,6 +84,14 @@
    .tabs__element {
     padding: 0;
     background-color: $color-transparent;
+
+    &:first-of-type .accordion__element:last-of-type {
+      padding: 24px 0;
+
+      .accordion__button {
+        top: 32px;
+      }
+    }
   }
 
   .accordion__element {
@@ -74,7 +108,7 @@
 
   .accordion__title {
     margin: 0;
-    // margin-bottom: 16px;
+    padding-right: 60px;
     font-size: 24px;
     line-height: 120%;
     font-weight: 500;
@@ -133,6 +167,10 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 140%;
+
+      @include vp-1199 {
+        padding-right: 160px;
+      }
     }
   }
 }
