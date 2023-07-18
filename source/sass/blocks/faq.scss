@@ -8,6 +8,10 @@
     padding-bottom: 100px;
   }
 
+  @include vp-767 {
+    padding-top: 70px;
+  }
+
   h2 {
     margin: 0;
     margin-bottom: 39px;
@@ -20,6 +24,12 @@
       font-size: 42px;
       letter-spacing: 1.26px;
       text-align: center;
+    }
+
+    @include vp-767 {
+      margin-bottom: 30px;
+      font-size: 32px;
+      letter-spacing: 0.96px;
     }
   }
 }
@@ -45,6 +55,11 @@
     justify-content: space-between;
     margin-bottom: 39px;
   }
+
+  @include vp-767 {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
 }
 
 .faq__control {
@@ -62,6 +77,12 @@
 
   @include vp-1199 {
     min-width: 162px;
+  }
+
+  @include vp-767 {
+    min-width: 141px;
+    padding: 13px;
+    font-size: 16px;
   }
 
   &.is-active,
@@ -101,6 +122,11 @@
     padding: 31px 0 24px;
     border-bottom: 1px solid $color-resolution-blue-opacity;
 
+    @include vp-767 {
+      min-height: 83px;
+      padding: 21px 0 18px;
+    }
+
     &:first-of-type {
       border-top: 1px solid $color-resolution-blue-opacity;
     }
@@ -113,6 +139,11 @@
     line-height: 120%;
     font-weight: 500;
     letter-spacing: 0.1px;
+
+    @include vp-767 {
+      padding-right: 50px;
+      font-size: 18px;
+    }
   }
 
   .accordion__button {
@@ -125,6 +156,12 @@
     border: 1px solid $color-resolution-blue;
     border-radius: 50%;
 
+    @include vp-767 {
+      top: 35px;
+      width: 32px;
+      height: 32px;
+    }
+
     &::after,
     &::before {
       position: absolute;
@@ -136,6 +173,11 @@
       border-bottom: 2px solid $color-resolution-blue;
       z-index: 1;
       content: "";
+
+      @include vp-767 {
+        top: 14px;
+        width: 12px;
+      }
     }
 
     &::after {
@@ -170,6 +212,12 @@
 
       @include vp-1199 {
         padding-right: 160px;
+      }
+
+      @include vp-767 {
+        padding-top: 12px;
+        padding-right: 18px;
+        font-size: 16px;
       }
     }
   }
