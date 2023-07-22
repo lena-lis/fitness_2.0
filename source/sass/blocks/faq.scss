@@ -144,6 +144,13 @@
       padding-right: 50px;
       font-size: 18px;
     }
+
+    br {
+      display: none;
+      @include vp-767 {
+        display: block;
+      }
+    }
   }
 
   .accordion__button {
