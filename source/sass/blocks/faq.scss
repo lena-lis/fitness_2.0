@@ -5,11 +5,12 @@
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 9px;
   }
 
   @include vp-767 {
     padding-top: 70px;
+    padding-bottom: 0;
   }
 
   h2 {
@@ -105,6 +106,12 @@
    .tabs__element {
     padding: 0;
     background-color: $color-transparent;
+
+    .accordion:last-of-type {
+      @include vp-767 {
+        margin-bottom: 31px;
+      }
+    }
 
     &:first-of-type .accordion__element:last-of-type {
       padding: 24px 0;

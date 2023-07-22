@@ -26,4 +26,13 @@ const coachSlider = new Swiper('.coach__slider', {
   },
 });
 
-export {coachSlider};
+// eslint-disable-next-line no-undef
+const reviewsSlider = new Swiper('.reviews__slider', {
+  loop: false,
+  navigation: {
+    prevEl: '.reviews__button--prev',
+    nextEl: '.reviews__button--next',
+  },
+});
+
+export {coachSlider, reviewsSlider};
