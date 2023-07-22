@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="./fonts/alumni-sans-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni-sans-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/roboto-condensed-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/roboto-condensed-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/roboto-condensed-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -811,14 +812,16 @@
           </div>
         </section>
 
+        <!------------------ Контакты и Бесплатное занятие ------->
+
         <section class="info">
-          <div class="info__container container">
+          <div class="info__container">
             <div class="info__lesson-container lesson">
               <h2>Бесплатное занятие </h2>
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <p>
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{2,}" required>
+                  <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁёa-zA-Z]{1,}" required>
                 </p>
                 <p>
                   <label class="visually-hidden" for="tel">Телефон</label>
@@ -827,26 +830,28 @@
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
-            <div class="info__contacts-container contacts">
+            <div class="info__contacts-container">
               <h2>Контакты</h2>
-              <ul>
-                <li>
-                  <h3>Адрес:</h3>
-                  <address>г. Омск, ул. 60 лет Октября, 7</address>
-                </li>
-                <li>
-                  <h3>График работы:</h3>
-                  <p>Пн-Вс: с 8:00 до 22:00</p>
-                </li>
-                <li>
-                  <h3>Телефон:</h3>
-                  <a href="tel:+78005555555">8-800-555-55-55</a>
-                </li>
-                <li>
-                  <h3>Email:</h3>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </li>
-              </ul>
+              <div class="info__contacts-list">
+                <ul>
+                  <li>
+                    <h3>Адрес:</h3>
+                    <address>г. Омск, ул. 60 лет Октября, 7</address>
+                  </li>
+                  <li>
+                    <h3>Телефон:</h3>
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                  </li>
+                  <li>
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </li>
+                  <li>
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>

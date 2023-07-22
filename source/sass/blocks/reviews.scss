@@ -1,5 +1,6 @@
 .reviews {
   padding-top: 120px;
+  padding-bottom: 120px;
 
   @include vp-1199 {
     padding-top: 91px;
@@ -38,7 +39,7 @@
   position: relative;
   width: 560px;
   margin: 0 auto;
-  margin-bottom: 121px;
+  // margin-bottom: 121px;
 
   @include vp-1199 {
     width: 566px;
