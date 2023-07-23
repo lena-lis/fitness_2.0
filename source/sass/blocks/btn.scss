@@ -15,8 +15,20 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--primary {
+    &:hover {
+      color: $color-egyptian-blue;
+      background-color: $color-default-white;
+    }
+
+    &:active {
+      color: $color-sapphire;
+      background-color: $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
   }
 
   &--secondary {

@@ -2,11 +2,26 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+
   h2 {
     margin: 0;
     font-family: $ff-alumni;
     font-size: 54px;
     letter-spacing: 1.62px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 }
 
@@ -17,15 +32,44 @@
   color: $color-default-white;
   background-color: $color-sapphire;
 
+  @include vp-1199 {
+    padding: 54px 163px 70px 133px;
+  }
+
+  @include vp-767 {
+    padding: 58px 15px 69px;
+  }
+
   h2 {
     line-height: 156%; /* 84.24px */
     font-weight: 800;
+
+    @include vp-1199 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: 1.46px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 25px;
+      letter-spacing: 0.96px;
+    }
   }
 
   form {
     display: grid;
     grid-template-columns: repeat(2, 190px);
     gap: 21px 30px;
+
+    @include vp-1199 {
+      grid-template-columns: repeat(2, 206px);
+      gap: 30px 60px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: auto;
+      gap: 27px;
+    }
   }
 
   p {
@@ -39,11 +83,34 @@
     padding-left: 0;
     font-size: 14px;
     background-color: $color-transparent;
-    border: none;
+    border: 1px solid $color-transparent;
     border-bottom: 1px solid $color-light-slate-grey;
+
+    @include vp-1199 {
+      min-width: 206px;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+      padding-bottom: 5px;
+    }
 
     &::placeholder {
       color: $color-default-white;
+    }
+
+    &:hover {
+      border-color: $color-default-white;
+    }
+
+    &:active,
+    &:focus {
+      border: 1px solid $color-default-white;
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.3;
     }
   }
 
@@ -52,8 +119,12 @@
     justify-content: center;
     padding: 14px 20px 9px;
     font-size: 14px;
-    // line-height: normal;
     letter-spacing: 0.7px;
+
+    @include vp-767 {
+      margin-top: 10px;
+      padding: 16px 20px 11px;
+    }
   }
 }
 
@@ -63,17 +134,44 @@
   padding: 57px 159px 63px 109px;
   border-top: 1px solid $color-light-slate-grey;
 
+  @include vp-1199 {
+    padding: 61px 179px 58px 109px;
+    border-top: none;
+  }
+
+  @include vp-767 {
+    padding: 63px 87px 59px 15px;
+  }
+
   h2 {
     margin-bottom: 37px;
     margin-left: 11px;
     font-weight: 600;
     line-height: normal;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+      margin-left: 22px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+      margin-bottom: 34px;
+    }
   }
 }
 
 .info__contacts-list {
   position: relative;
   padding-left: 15px;
+
+  @include vp-1199 {
+    padding-left: 23px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
 
   ul {
     display: grid;
@@ -82,13 +180,44 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @include vp-1199 {
+      gap: 18px 96px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: auto;
+      gap: 17px;
+    }
   }
+
+  li {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+
+      &:first-of-type {
+        order: -2;
+      }
+
+      &:nth-child(3) {
+        order: -1;
+      }
+    }
+  }
+
+
 
   h3 {
     margin: 0;
     font-size: 16px;
     line-height: 150%;
     font-weight: 700;
+
+    @include vp-1199 {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
   }
 
   address,
@@ -99,6 +228,10 @@
     font-size: 14px;
     line-height: 168%;
     font-weight: 400;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
   }
 
   &::after {
@@ -109,5 +242,15 @@
     height: 102px;
     border-right: 1px solid $color-light-slate-grey;
     content: "";
+
+    @include vp-1199 {
+      top: 8px;
+      left: 289px;
+      height: 129px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 }

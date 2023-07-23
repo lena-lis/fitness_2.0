@@ -166,20 +166,6 @@
     @include vp-767 {
       padding: 12px 50px;
     }
-
-    &:hover {
-      color: $color-egyptian-blue;
-      background-color: $color-default-white;
-    }
-
-    &:active {
-      color: $color-sapphire;
-      background-color: $color-default-white;
-    }
-
-    &:disabled {
-      opacity: 0.5;
-    }
   }
 }
 
