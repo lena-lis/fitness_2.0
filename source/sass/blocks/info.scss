@@ -82,6 +82,7 @@
     padding-bottom: 6px;
     padding-left: 0;
     font-size: 14px;
+    color: $color-default-white;
     background-color: $color-transparent;
     border: 1px solid $color-transparent;
     border-bottom: 1px solid $color-light-slate-grey;
@@ -111,6 +112,14 @@
 
     &:disabled {
       opacity: 0.3;
+    }
+
+    &:invalid {
+      border-bottom-color: $color-error-red;
+    }
+
+    &:placeholder-shown {
+      border-bottom-color: $color-default-white;
     }
   }
 

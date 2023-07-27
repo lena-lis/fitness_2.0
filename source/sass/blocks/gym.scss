@@ -170,6 +170,8 @@
   }
 
   iframe {
+    border: 0;
+
     @include vp-1199 {
       width: 266px;
       height: 167px;

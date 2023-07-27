@@ -73,77 +73,6 @@
     }
   }
 
-  time {
-    grid-column: 2 / -1;
-    grid-row: 1 / 2;
-    margin-bottom: 3px;
-    transform: translateX(2px);
-
-    @include vp-1199 {
-      margin-bottom: 0;
-      line-height: normal;
-    }
-
-    tr {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: min-content;
-
-      td:first-of-type {
-        margin-bottom: 15px;
-        font-size: 18px;
-
-        @include vp-1199 {
-          margin-bottom: 14px;
-          font-size: 12px;
-        }
-      }
-
-      td:nth-of-type(2) {
-        display: flex;
-        align-items: center;
-        column-gap: 7px;
-        font-size: 14px;
-        line-height: normal;
-        transform: translateY(-12px);
-
-        @include vp-1199 {
-          column-gap: 4px;
-          font-size: 10px;
-        }
-
-        span {
-          font-size: 40px;
-          font-weight: 700;
-
-          @include vp-1199 {
-            font-size: 24px;
-          }
-        }
-      }
-    }
-    tr:not(:last-of-type) {
-      margin-bottom: 4px;
-
-      @include vp-1199 {
-        margin-bottom: -8px;
-      }
-    }
-
-    tr::before {
-      position: absolute;
-      top: 30px;
-      width: 100%;
-      border: 1px solid $color-default-white;
-      content: "";
-
-      @include vp-1199 {
-        top: 18px;
-      }
-    }
-  }
-
   a {
     grid-column: 1 / -1;
     justify-content: center;
@@ -165,6 +94,78 @@
 
     @include vp-767 {
       padding: 12px 50px;
+    }
+  }
+}
+
+.competition__date {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  margin-bottom: 3px;
+  transform: translateX(2px);
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    line-height: normal;
+  }
+
+  tr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+  }
+
+  tr:not(:last-of-type) {
+    margin-bottom: 4px;
+
+    @include vp-1199 {
+      margin-bottom: -8px;
+    }
+  }
+
+  tr::before {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    border: 1px solid $color-default-white;
+    content: "";
+
+    @include vp-1199 {
+      top: 18px;
+    }
+  }
+
+  td:first-of-type {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+    @include vp-1199 {
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+  }
+
+  td:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 14px;
+    line-height: normal;
+    transform: translateY(-12px);
+
+    @include vp-1199 {
+      column-gap: 4px;
+      font-size: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      font-weight: 700;
+
+      @include vp-1199 {
+        font-size: 24px;
+      }
     }
   }
 }
