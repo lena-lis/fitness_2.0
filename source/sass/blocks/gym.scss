@@ -42,11 +42,11 @@
     font-family: "Alumni Sans", "Arial", sans-serif;
     font-size: 48px;
     line-height: normal;
+    font-weight: 600;
     letter-spacing: 1.44px;
 
     @include vp-1199 {
       margin: 0;
-      margin-left: -13px;
       font-size: 42px;
     }
 
@@ -76,16 +76,17 @@
   p {
     grid-column: 1 / 2;
     margin: 0;
+    font-weight: 300;
 
     @include vp-1199 {
       margin-bottom: 43px;
-      padding: 0 45px;
+      padding: 0 53px;
     }
 
     @include vp-767 {
       margin-bottom: 33px;
       padding: 0;
-      padding-right: 21px;
+      padding-right: 27px;
     }
   }
 
@@ -115,6 +116,8 @@
   }
 
   img {
+    width: auto;
+
     @include vp-767 {
       width: 100%;
       max-height: 313px;

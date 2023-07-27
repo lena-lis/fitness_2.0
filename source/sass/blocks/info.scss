@@ -32,12 +32,17 @@
   color: $color-default-white;
   background-color: $color-sapphire;
 
+  @include vp-1365 {
+    padding-right: 120px;
+    padding-left: 70px;
+  }
+
   @include vp-1199 {
-    padding: 54px 163px 70px 133px;
+    padding: 54px 163px 68px 133px;
   }
 
   @include vp-767 {
-    padding: 58px 15px 69px;
+    padding: 58px 15px 67px;
   }
 
   h2 {
@@ -63,7 +68,7 @@
 
     @include vp-1199 {
       grid-template-columns: repeat(2, 206px);
-      gap: 30px 60px;
+      gap: 27px 60px;
     }
 
     @include vp-767 {
@@ -126,13 +131,17 @@
   button {
     grid-column: 1 / -1;
     justify-content: center;
-    padding: 14px 20px 9px;
+    padding: 13px 20px 8px;
     font-size: 14px;
     letter-spacing: 0.7px;
 
+    @include vp-1199 {
+      padding: 13px 20px;
+    }
+
     @include vp-767 {
       margin-top: 10px;
-      padding: 16px 20px 11px;
+      padding: 14px 20px 13px;
     }
   }
 }
@@ -143,8 +152,13 @@
   padding: 57px 159px 63px 109px;
   border-top: 1px solid $color-light-slate-grey;
 
+  @include vp-1365 {
+    padding-right: 70px;
+    padding-left: 109px;
+  }
+
   @include vp-1199 {
-    padding: 61px 179px 58px 109px;
+    padding: 61px 179px 59px 109px;
     border-top: none;
   }
 
