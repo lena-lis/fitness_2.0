@@ -1,6 +1,8 @@
 .info__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1920px;
+  margin: 0 auto;
 
   @include vp-1199 {
     display: flex;
@@ -38,7 +40,7 @@
   }
 
   @include vp-1199 {
-    padding: 54px 163px 68px 133px;
+    padding: 54px 163px 69px 133px;
   }
 
   @include vp-767 {
@@ -158,7 +160,7 @@
   }
 
   @include vp-1199 {
-    padding: 61px 179px 59px 109px;
+    padding: 61px 179px 60px 109px;
     border-top: none;
   }
 
@@ -199,17 +201,20 @@
   ul {
     display: grid;
     grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
     gap: 17px 120px;
     margin: 0;
     padding: 0;
     list-style-type: none;
 
     @include vp-1199 {
-      gap: 18px 96px;
+      gap: 16px 96px;
     }
 
     @include vp-767 {
       grid-template-columns: auto;
+      grid-auto-flow: row;
       gap: 17px;
     }
   }
@@ -218,18 +223,8 @@
     @include vp-767 {
       display: flex;
       flex-direction: column;
-
-      &:first-of-type {
-        order: -2;
-      }
-
-      &:nth-child(3) {
-        order: -1;
-      }
     }
   }
-
-
 
   h3 {
     margin: 0;

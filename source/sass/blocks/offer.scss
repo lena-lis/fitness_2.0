@@ -16,7 +16,7 @@
   h2 {
     margin: 0;
     margin-bottom: 34px;
-    font-family:$ff-alumni;
+    font-family: $ff-alumni;
     font-size: 54px;
     line-height: normal;
     font-weight: 600;
@@ -242,7 +242,7 @@
     }
   }
 
-  article:nth-of-type(2) {
+  article:nth-of-type(2n) {
     p {
       @include vp-1199 {
         padding-right: 40px;
@@ -259,6 +259,7 @@
       @include vp-1199 {
         word-spacing: 1.5px;
       }
+
       @include vp-767 {
         padding: 0 30px;
       }

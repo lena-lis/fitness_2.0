@@ -1,5 +1,6 @@
-// eslint-disable-next-line no-undef
-const coachSlider = new Swiper('.coach__slider', {
+import Swiper from '../vendor/swiper.js';
+
+const coachSlider = new Swiper('[data-coach-slider]', {
   initialSlide: 2,
   slidesPerView: 1,
   loop: true,
@@ -13,11 +14,13 @@ const coachSlider = new Swiper('.coach__slider', {
       initialSlide: 0,
       slidesPerView: 3,
       spaceBetween: 40,
+      allowTouchMove: false,
     },
     1366: {
       initialSlide: 0,
       slidesPerView: 4,
       spaceBetween: 40,
+      allowTouchMove: false,
     },
   },
   navigation: {
@@ -26,8 +29,7 @@ const coachSlider = new Swiper('.coach__slider', {
   },
 });
 
-// eslint-disable-next-line no-undef
-const reviewsSlider = new Swiper('.reviews__slider', {
+const reviewsSlider = new Swiper('[data-reviews-slider]', {
   loop: false,
   navigation: {
     prevEl: '.reviews__button--prev',
