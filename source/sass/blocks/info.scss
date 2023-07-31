@@ -48,7 +48,7 @@
   }
 
   h2 {
-    line-height: 156%; /* 84.24px */
+    line-height: 156%;
     font-weight: 800;
 
     @include vp-1199 {
@@ -107,12 +107,16 @@
       color: $color-default-white;
     }
 
-    &:hover {
+    @include hover {
       border-color: $color-default-white;
     }
 
-    &:active,
-    &:focus {
+    @include focus {
+      border: 1px solid $color-default-white;
+      outline: none;
+    }
+
+    @include active {
       border: 1px solid $color-default-white;
       outline: none;
     }

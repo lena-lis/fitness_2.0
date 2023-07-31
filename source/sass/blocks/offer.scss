@@ -76,11 +76,11 @@
       content: "";
     }
 
-    &:hover {
+    @include hover {
       opacity: 0.8;
     }
 
-    &:focus {
+    @include focus {
       border-color: $color-default-white;
     }
 
@@ -104,7 +104,7 @@
     justify-content: space-between;
 
     color: $color-default-white;
-    background-color: $color-torch-red-1;
+    background-color: $color-torch-red;
 
     @include vp-1199 {
       grid-column: 1 / -1;
@@ -231,12 +231,12 @@
         transform: translateX(-7px);
       }
 
-      &::after {
-        width: 62%;
+      @include focus {
         border-color: $color-resolution-blue;
       }
 
-      &:focus {
+      &::after {
+        width: 62%;
         border-color: $color-resolution-blue;
       }
     }

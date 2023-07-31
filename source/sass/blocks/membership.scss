@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 73px;
-    background-color: #ffffff;
+    background-color: $color-default-white;
     content: "";
 
     @include vp-1199 {
@@ -177,13 +177,12 @@
         min-height: 384px;
         padding: 44px 34px 37px;
       }
-    }
 
-    li:hover,
-    li:focus {
-      border-width: 7px;
-      border-style: solid;
-      border-image: $torch-red-to-cobalt 1;
+      @include hover-focus {
+        border-width: 7px;
+        border-style: solid;
+        border-image: $torch-red-to-cobalt 1;
+      }
     }
 
     h3 {

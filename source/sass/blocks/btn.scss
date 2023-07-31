@@ -15,30 +15,25 @@
 
   transition: opacity $trans-default;
 
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   &--primary {
-    &:hover {
+    @include hover-focus {
       color: $color-egyptian-blue;
       background-color: $color-default-white;
     }
 
-    &:active {
+    @include active {
       color: $color-sapphire;
       background-color: $color-default-white;
-    }
-
-    &:disabled {
-      opacity: 0.5;
     }
   }
 
   &--secondary {
     color: $color-sapphire;
     border-color: $color-sapphire;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
   }
 }

@@ -177,13 +177,12 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     border: 1px solid $color-sapphire;
     border-radius: 50%;
   }
 
-  &:active {
+  @include active {
     color: $color-default-white;
     background-color: $color-sapphire;
   }
