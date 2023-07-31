@@ -88,9 +88,26 @@
   }
 
   a {
-    padding: 40px 20px;
+    position: relative;
+    padding: 10px 19px;
     font-size: 14px;
     color: $color-default-white;
+    border: 1px solid $color-transparent;
+
+    @include hover {
+      text-decoration: underline;
+      text-underline-offset: 10px;
+    }
+
+    @include focus {
+      border-color: $color-default-white;
+      outline: none;
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
 
     @include vp-1199 {
       padding: 40px 15px;

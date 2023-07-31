@@ -206,6 +206,15 @@
     &::after {
       transform: rotate(90deg);
     }
+
+    @include hover-focus {
+      background-color: $color-resolution-blue;
+
+      &::after,
+      &::before {
+        border-bottom-color: $color-default-white;
+      }
+    }
   }
 
   .accordion__element.is-active .accordion__button {
