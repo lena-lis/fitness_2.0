@@ -66,7 +66,7 @@
   form {
     display: grid;
     grid-template-columns: repeat(2, 190px);
-    gap: 21px 30px;
+    column-gap: 30px;
 
     @include vp-1199 {
       grid-template-columns: repeat(2, 206px);
@@ -79,12 +79,31 @@
     }
   }
 
-  p {
+  .info__input-container {
+    position: relative;
     margin: 0;
+
+    .input-message {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 14px;
+    }
+  }
+
+  .info__input-container.is-invalid {
+    input {
+      border-bottom-color: $color-error-red;
+    }
+
+    .input-message {
+      color: $color-error-red;
+    }
   }
 
   input {
     min-width: 190px;
+    margin-bottom: 21px;
     padding: 10px;
     padding-bottom: 6px;
     padding-left: 0;
@@ -96,6 +115,7 @@
 
     @include vp-1199 {
       min-width: 206px;
+      margin-bottom: 0;
     }
 
     @include vp-767 {

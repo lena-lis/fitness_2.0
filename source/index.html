@@ -856,17 +856,17 @@
 
         <section class="info">
           <div class="info__container">
-            <div class="info__lesson-container lesson">
+            <div class="info__lesson-container" data-form-validate="data-form-validate" data-callback="base">
               <h2>Бесплатное занятие </h2>
               <form action="https://echo.htmlacademy.ru/" method="post" data-form>
-                <p>
+                <div class="info__input-container" data-validate-type="text" data-limitation="name" data-message-base="Обязательное поле" data-message-extra="Поле заполнено некорректно" data-required="data-required">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁёa-zA-Z\-]{1,}" required>
-                </p>
-                <p>
+                  <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁёa-zA-Z\- ]{1,}" required>
+                </div>
+                <div class="info__input-container" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Обязательное поле" data-message-extra="Поле заполнено некорректно" data-message-success="Поле заполнено верно" data-required="data-required">
                   <label class="visually-hidden" for="tel">Телефон</label>
-                  <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^\+\d{1}\d{3}\d{7}$" required>
-                </p>
+                  <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^((\+7)[\ ]?)?(\(?\d{3}\)?[\ ]?)?[\d\ ]{10}$" required>
+                </div>
                 <button class="btn btn--primary" type="submit">Отправить</button>
               </form>
             </div>
