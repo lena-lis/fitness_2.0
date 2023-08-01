@@ -3615,7 +3615,7 @@ header {
   gap: 10px;
 }
 
-.faq__control {
+.faq__control.tabs__control {
   min-width: 260px;
   margin: 0;
   padding: 17px;
@@ -4599,7 +4599,7 @@ header {
     margin-bottom: 39px;
   }
 
-  .faq__control {
+  .faq__control.tabs__control {
     min-width: 160px;
   }
 
@@ -5258,7 +5258,7 @@ header {
     margin-bottom: 30px;
   }
 
-  .faq__control {
+  .faq__control.tabs__control {
     min-width: 141px;
     padding: 13px;
     font-size: 16px;
