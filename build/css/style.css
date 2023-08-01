@@ -2773,8 +2773,7 @@ header {
   position: relative;
   min-height: 851px;
   margin-bottom: 73px;
-  padding-top: 141px;
-  padding-bottom: 79px;
+  padding: 141px 93px 79px;
   background-color: #f8f9fc;
 }
 
@@ -4883,6 +4882,7 @@ header {
   }
 
   .gym__image-container {
+    align-self: auto;
     margin: 0;
     margin-bottom: 40px;
   }
