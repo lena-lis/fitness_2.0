@@ -4,7 +4,6 @@ import {initTabs} from './modules/tabs/init-tabs.js';
 import {initAccordions} from './modules/accordions/init-accordion.js';
 import './modules/play-video.js';
 import './modules/slider.js';
-import './modules/form-reset.js';
 
 // ---------------------------------
 
