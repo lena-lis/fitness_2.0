@@ -79,28 +79,6 @@
     }
   }
 
-  .info__input-container {
-    position: relative;
-    margin: 0;
-
-    .input-message {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      font-size: 14px;
-    }
-  }
-
-  .info__input-container.is-invalid {
-    input {
-      border-bottom-color: $color-error-red;
-    }
-
-    .input-message {
-      color: $color-error-red;
-    }
-  }
-
   input {
     min-width: 190px;
     margin-bottom: 21px;
@@ -169,6 +147,28 @@
       margin-top: 10px;
       padding: 14px 20px 13px;
     }
+  }
+}
+
+.info__input-container {
+  position: relative;
+  margin: 0;
+
+  .input-message {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+  }
+}
+
+.info__input-container.is-invalid {
+  input {
+    border-bottom-color: $color-error-red;
+  }
+
+  .input-message {
+    color: $color-error-red;
   }
 }
 
