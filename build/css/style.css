@@ -5288,6 +5288,11 @@ button,
   left: 0;
   font-size: 14px;
 }
+@media (max-width: 1199px) {
+  .info__input-container .input-message {
+    bottom: -25px;
+  }
+}
 
 .info__input-container.is-invalid input {
   border-bottom-color: #ff121f;

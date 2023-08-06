@@ -159,6 +159,10 @@
     bottom: 0;
     left: 0;
     font-size: 14px;
+
+    @include vp-1199 {
+      bottom: -25px;
+    }
   }
 }
 
