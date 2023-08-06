@@ -67,7 +67,7 @@
   }
 }
 
-.faq__control.tabs__control {
+.faq__control {
   min-width: 260px;
   margin: 0;
   padding: 17px;
@@ -90,6 +90,10 @@
     font-size: 16px;
   }
 
+  @include hover-focus {
+    border-color: $color-sapphire;
+  }
+
   &.is-active,
   &:active {
     color: $color-default-white;
@@ -97,7 +101,7 @@
     border-image: $torch-red-to-cobalt 1;
   }
 
-  &:active {
+  @include active {
     color: $color-white-opacity;
   }
 
