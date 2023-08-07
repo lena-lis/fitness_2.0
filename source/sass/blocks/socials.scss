@@ -12,38 +12,38 @@
   li:last-of-type {
     margin-right: 0;
   }
+}
 
-  a {
-    position: relative;
-    min-width: 25px;
-    min-height: 25px;
+.socials__link {
+  position: relative;
+  min-width: 25px;
+  min-height: 25px;
 
-    line-height: 0;
+  line-height: 0;
 
-    background-color: $color-default-white;
-    border-radius: 50%;
+  background-color: $color-default-white;
+  border-radius: 50%;
 
-    @include hover-focus {
-      background-color: $color-egyptian-blue;
-      outline: none;
+  @include hover-focus {
+    background-color: $color-egyptian-blue;
+    outline: none;
 
-      svg {
-        color: $color-default-white;
-      }
+    svg {
+      color: $color-default-white;
     }
+  }
 
-    @include active {
-      background-color: $color-sapphire;
+  @include active {
+    background-color: $color-sapphire;
 
-      svg {
-        color: $color-default-white;
-      }
+    svg {
+      color: $color-default-white;
     }
+  }
 
-    &.disabled {
-      opacity: 0.3;
-      pointer-events: none;
-    }
+  &.disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   svg {
