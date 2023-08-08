@@ -5,6 +5,10 @@
   padding: 141px 93px 79px;
   background-color: $color-ghost-white;
 
+  @include vp-1365 {
+    padding: 141px 20px 79px;
+  }
+
   @include vp-1199 {
     margin-bottom: 53px;
     padding: 114px 163px 60px;
