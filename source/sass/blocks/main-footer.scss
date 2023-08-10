@@ -75,8 +75,8 @@
       grid-template-rows: repeat(3, 1fr);
       grid-auto-flow: column;
 
-      column-gap: 75px;
-      row-gap: 16px;
+      column-gap: 73px;
+      row-gap: 14px;
     }
   }
 
@@ -110,7 +110,7 @@
     }
 
     @include vp-1199 {
-      padding: 40px 15px;
+      padding: 20px 14px;
     }
 
     @include vp-767 {

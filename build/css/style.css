@@ -2964,7 +2964,7 @@ button,
   column-gap: 50px;
   padding: 80px 78px 87px;
   color: #ffffff;
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 
 .competition__description h2 {
@@ -3463,7 +3463,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #ffffff;
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 
 .offer__description {
@@ -4195,7 +4195,7 @@ button,
   }
 
   .main-footer__nav-container a {
-    padding: 40px 15px;
+    padding: 20px 14px;
   }
 
   .main-footer__socials-container {
@@ -4274,8 +4274,8 @@ button,
   }
 
   .membership__container {
-    margin-bottom: 53px;
-    padding: 114px 163px 60px;
+    margin-bottom: 100px;
+    padding: 114px 163px 59px;
   }
 
   .membership__container::before {
@@ -4341,6 +4341,7 @@ button,
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
     margin-bottom: 100px;
+    padding-top: 0;
   }
 
   .competition__description {
@@ -4463,7 +4464,7 @@ button,
     -webkit-column-gap: 54px;
     -moz-column-gap: 54px;
     column-gap: 54px;
-    row-gap: 42px;
+    row-gap: 43px;
   }
 
   .features__container h3 {
@@ -4701,7 +4702,8 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .modal__wrapper {
@@ -4817,10 +4819,10 @@ button,
     -ms-grid-rows: (1fr)[3];
     grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: column;
-    -webkit-column-gap: 75px;
-    -moz-column-gap: 75px;
-    column-gap: 75px;
-    row-gap: 16px;
+    -webkit-column-gap: 73px;
+    -moz-column-gap: 73px;
+    column-gap: 73px;
+    row-gap: 14px;
   }
 
   .main-footer__nav-container li:first-of-type {
@@ -4903,7 +4905,7 @@ button,
 
   .membership__container {
     margin-bottom: 0;
-    padding: 70px 15px;
+    padding: 70px 15px 69px;
   }
 
   .membership__container::before {
@@ -5070,7 +5072,7 @@ button,
   }
 
   .features__container {
-    padding: 71px 0 64px;
+    padding: 71px 0 63px;
     text-align: center;
   }
 
@@ -5186,7 +5188,7 @@ button,
 
   .offer__description {
     min-height: 299px;
-    padding: 36px 45px 32px;
+    padding: 34px 45px 32px;
   }
 
   .offer__description h3 {
@@ -5314,7 +5316,7 @@ button,
 
   .reviews__wrapper {
     width: 226px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 
   .reviews__item {
