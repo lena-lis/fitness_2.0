@@ -2666,7 +2666,8 @@ button,
   margin: auto;
   width: 72px;
   height: 72px;
-  background: linear-gradient(83deg, #003d85 0%, #b80027 88.54%);
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
   border: none;
   border-radius: 50%;
   z-index: 30;
@@ -2683,7 +2684,8 @@ button,
   height: 100px;
   border-radius: 50%;
   border: 1px solid transparent;
-  background: linear-gradient(83deg, #003d85 0%, #b80027 88.54%) border-box;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7)) border-box;
+  background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%) border-box;
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
   -webkit-mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
   mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
