@@ -86,7 +86,8 @@
   }
 }
 
-.coach__item:hover h3 {
+.coach__item:hover h3,
+.coach__item:focus h3 {
   display: none;
 }
 

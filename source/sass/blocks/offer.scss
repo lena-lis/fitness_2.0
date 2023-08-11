@@ -80,11 +80,14 @@
       opacity: 0.8;
     }
 
-    @include focus {
+    &:focus,
+    &:focus-visible {
       border-color: $color-default-white;
+      outline: none;
     }
 
-    &:focus::after {
+    &:focus::after,
+    &:focus-visible::after {
       display: none;
     }
 

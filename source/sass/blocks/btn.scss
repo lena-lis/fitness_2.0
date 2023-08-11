@@ -21,12 +21,13 @@
   }
 
   &--primary {
-    @include hover-focus {
+    &:hover,
+    &:focus {
       color: $color-egyptian-blue;
       background-color: $color-default-white;
     }
 
-    @include active {
+    &:active {
       color: $color-sapphire;
       background-color: $color-default-white;
     }

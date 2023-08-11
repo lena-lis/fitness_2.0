@@ -256,7 +256,6 @@
 
   @include hover-focus {
     background: $color-default-white;
-    outline: none;
 
     &::before {
       background: $color-sapphire border-box;

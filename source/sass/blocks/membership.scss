@@ -182,11 +182,22 @@
     min-height: 384px;
     padding: 44px 34px 37px;
   }
+}
 
-  @include hover-focus {
-    border-width: 7px;
-    border-style: solid;
+.membership__element li:hover,
+.membership__element li:focus {
+  border-width: 7px;
+  border-style: solid;
+  border-image: $torch-red-to-cobalt 1;
+
+  .membership__button {
+    color: $color-default-white;
+    background: $torch-red-to-cobalt;
     border-image: $torch-red-to-cobalt 1;
+
+    &:active {
+      color: $color-white-opacity;
+    }
   }
 }
 
@@ -286,15 +297,10 @@
   }
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $color-default-white;
     background: $torch-red-to-cobalt;
     border-image: $torch-red-to-cobalt 1;
-  }
-
-  &:active {
-    color: $color-white-opacity;
   }
 
   &:disabled {
