@@ -39,6 +39,7 @@
   }
 
   @include vp-1199 {
+    justify-content: center;
     padding: 54px 163px 69px 133px;
   }
 
@@ -198,6 +199,7 @@
   }
 
   @include vp-1199 {
+    justify-content: center;
     padding: 61px 179px 60px 109px;
     border-top: none;
   }

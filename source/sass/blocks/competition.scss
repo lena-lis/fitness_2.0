@@ -6,7 +6,7 @@
   padding-top: 47px;
 
   @include vp-1199 {
-    grid-template-columns: 292px 386px;
+    grid-template-columns: 1fr 386px;
     margin-bottom: 100px;
     padding-top: 0;
   }
@@ -40,6 +40,7 @@
 
   h2 {
     margin: 0;
+    margin-left: 11px;
     font-family: $ff-alumni;
     font-size: 82px;
     line-height: 96%;

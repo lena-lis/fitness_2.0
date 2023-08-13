@@ -18,6 +18,8 @@
   }
 
   @include vp-767 {
+    grid-template-columns: max-content min-content 1fr;
+    justify-content: unset;
     min-height: 491px;
     padding-top: 84px;
   }
