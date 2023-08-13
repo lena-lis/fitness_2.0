@@ -24,7 +24,8 @@
   background-color: $color-default-white;
   border-radius: 50%;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: $color-egyptian-blue;
     outline: none;
 
@@ -33,7 +34,7 @@
     }
   }
 
-  @include active {
+  &:active {
     background-color: $color-sapphire;
 
     svg {

@@ -1,8 +1,11 @@
+.faq {
+  background-color: $color-ghost-white;
+}
+
 .faq__container {
   min-height: 797px;
   padding-top: 120px;
   padding-bottom: 30px;
-  background-color: $color-ghost-white;
 
   @include vp-1199 {
     min-height: 850px;
@@ -81,6 +84,7 @@
   opacity: 1;
 
   @include vp-1199 {
+    flex-grow: 1;
     min-width: 160px;
   }
 

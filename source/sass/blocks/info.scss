@@ -1,7 +1,6 @@
 .info__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1920px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -29,7 +28,7 @@
 
 .info__lesson-container {
   display: grid;
-  justify-content: center;
+  justify-content: end;
   padding: 56px 170px 68px 103px;
   color: $color-default-white;
   background-color: $color-sapphire;
@@ -103,20 +102,32 @@
 
     &::placeholder {
       color: $color-default-white;
+      opacity: 1;
+      transition: opacity $trans-default;
     }
 
-    @include hover {
+    &:hover {
       border-color: $color-default-white;
     }
 
-    @include focus {
+    &:focus {
       border: 1px solid $color-default-white;
       outline: none;
+
+      &::placeholder {
+        color: $color-transparent;
+        opacity: 0;
+        transition: opacity $trans-default;
+      }
     }
 
-    @include active {
+    &:active {
       border: 1px solid $color-default-white;
       outline: none;
+
+      &::placeholder {
+        color: $color-transparent;
+      }
     }
 
     &:disabled {
@@ -178,7 +189,6 @@
 
 .info__contacts-container {
   display: grid;
-  justify-content: center;
   padding: 57px 159px 63px 109px;
   border-top: 1px solid $color-light-slate-grey;
 
@@ -292,7 +302,7 @@
   &::after {
     position: absolute;
     top: 5px;
-    left: 59%;
+    left: 245px;
     width: 1px;
     height: 102px;
     border-right: 1px solid $color-light-slate-grey;

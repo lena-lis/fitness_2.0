@@ -1,6 +1,9 @@
+.features {
+  background-color: $color-ghost-white;
+}
+
 .features__container {
   padding: 129px 163px 125px;
-  background-color: $color-ghost-white;
 
   @include vp-1199 {
     padding: 105px 45px 93px;

@@ -12,7 +12,7 @@ const coachSlider = new Swiper('[data-coach-slider]', {
     },
     1200: {
       initialSlide: 0,
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 40,
       allowTouchMove: false,
     },

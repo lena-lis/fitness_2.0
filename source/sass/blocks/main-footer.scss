@@ -1,12 +1,14 @@
 .main-footer {
+  background-color: $color-black-russian;
+}
+
+.main-footer__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   min-height: 108px;
-
-  background-color: $color-black-russian;
 
   @include vp-1199 {
     min-height: 114px;
@@ -112,8 +114,9 @@
       text-underline-offset: 10px;
     }
 
-    @include focus {
+    &:focus {
       border-color: $color-default-white;
+      text-decoration: none;
       outline: none;
     }
 

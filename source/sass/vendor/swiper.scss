@@ -612,3 +612,10 @@ button.swiper-pagination-bullet {
           backface-visibility: hidden;
   overflow: hidden;
 }
+
+// Чтобы в фокус не попадали дубликаты слайдов слева
+.swiper-slide-duplicate {
+  &:not(:not(&) ~ &) {
+    visibility: hidden;
+  }
+}

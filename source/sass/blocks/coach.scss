@@ -34,16 +34,19 @@
   margin-bottom: 105px;
 
   @include vp-1365 {
-    width: 860px;
+    width: 994px;
+    height: 100%;
+    margin: 0 auto 105px;
   }
 
   @include vp-1199 {
-    width: 566px;
-    margin-bottom: 100px;
+    width: auto;
+    margin: 0 101px;
+    margin-bottom: 91px;
   }
 
   @include vp-767 {
-    width: 226px;
+    margin: 0 47px;
     margin-bottom: 70px;
   }
 }
@@ -57,15 +60,18 @@
 .coach__item {
   position: relative;
   width: 260px;
-  min-height: 294px;
+
+  @include vp-1365 {
+    max-width: 483px;
+  }
 
   @include vp-1199 {
+    max-width: unset;
     width: 268px;
   }
 
   @include vp-767 {
     width: 226px;
-    min-height: 274px;
   }
 
   h3 {
@@ -82,6 +88,19 @@
     @include vp-1199 {
       bottom: 14px;
       left: 4px;
+    }
+  }
+
+  img {
+    @include vp-1365 {
+      width: 100%;
+      height: 100%;
+      min-height: 294px;
+      object-fit: cover;
+    }
+
+    @include vp-767 {
+      min-height: 274px;
     }
   }
 }
@@ -107,12 +126,11 @@
   background-color: $color-sapphire-opacity;
   overflow-y: auto;
 
-  @include vp-1199 {
-    width: 268px;
+  @include vp-1365 {
+    width: auto;
   }
 
   @include vp-767 {
-    width: 226px;
     padding-top: 44px;
     padding-left: 27px;
   }
@@ -233,9 +251,10 @@
     border-radius: 50%;
   }
 
-  @include active {
+  &:active {
     color: $color-default-white;
     background-color: $color-sapphire;
+    border-radius: 50%;
   }
 
   &:disabled {
@@ -249,15 +268,4 @@
 
 .coach__button::after {
   content: none;
-}
-
-.coach__image-container img {
-  @include vp-1199 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
 }

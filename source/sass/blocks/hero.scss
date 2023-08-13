@@ -1,11 +1,15 @@
+.hero {
+  background: $dark-cerulean-to-venetian-red;
+}
+
 .hero__container {
   display: grid;
-  grid-template-columns: max-content min-content 1fr;
+  grid-template-columns: max-content min-content max-content;
+  justify-content: center;
   min-height: 658px;
   padding-top: 51px;
   padding-bottom: 51px;
   color: $color-default-white;
-  background: $dark-cerulean-to-venetian-red;
 
   @include vp-1199 {
     min-height: 554px;
@@ -146,10 +150,11 @@
 .hero__image-container {
   grid-column: 3 / -1;
   grid-row: 1 / 4;
-  margin: auto 0;
+  margin: auto 200px;
   margin-left: 63px;
 
   @include vp-1199 {
+    margin: auto 0;
     margin-left: 29px;
   }
 
