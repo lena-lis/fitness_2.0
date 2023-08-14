@@ -35,12 +35,11 @@
 
   @include vp-1365 {
     width: 994px;
-    height: 100%;
-    margin: 0 auto 105px;
   }
 
   @include vp-1199 {
     width: auto;
+    height: 100%;
     margin: 0 101px;
     margin-bottom: 100px;
   }
@@ -128,6 +127,7 @@
 
   @include vp-1365 {
     width: auto;
+    padding-top: 50px;
   }
 
   @include vp-767 {

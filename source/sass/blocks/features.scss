@@ -3,7 +3,7 @@
 }
 
 .features__container {
-  padding: 129px 163px 125px;
+  padding: 129px 163px 105px;
 
   @include vp-1199 {
     padding: 105px 45px 93px;
@@ -42,7 +42,7 @@
     grid-template-columns: 340px 240px 340px;
     grid-template-rows: repeat(2, auto);
     column-gap: 60px;
-    row-gap: 159px;
+    row-gap: 139px;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -148,7 +148,7 @@
     flex-direction: column;
     align-self: center;
     min-height: 307px;
-    margin-bottom: 3px;
+    margin-bottom: 23px;
     padding: 65px 34px 60px;
     text-align: center;
     color: $color-default-white;
@@ -234,5 +234,13 @@
     &::before {
       left: 125%;
     }
+  }
+}
+
+.features__item:not(.features__item--accent) {
+  margin-bottom: 20px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
   }
 }

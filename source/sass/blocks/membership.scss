@@ -306,10 +306,12 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     color: $color-default-white;
     background: $torch-red-to-cobalt;
     border-image: $torch-red-to-cobalt 1;
+    outline: none;
   }
 
   &:disabled {

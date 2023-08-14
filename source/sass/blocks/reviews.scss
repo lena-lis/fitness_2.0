@@ -65,6 +65,7 @@
   grid-template-columns: 80px 1fr;
   grid-template-rows: repeat(2, auto);
   column-gap: 28px;
+  height: auto;
   padding: 54px 62px 56px;
   color: $color-default-white;
   background-color: $color-resolution-blue;
