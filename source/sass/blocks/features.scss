@@ -3,7 +3,7 @@
 }
 
 .features__container {
-  padding: 129px 163px 105px;
+  padding: 129px 163px 45px;
 
   @include vp-1199 {
     padding: 105px 45px 93px;
@@ -16,7 +16,6 @@
 
   h2 {
     margin: 0 auto;
-    margin-bottom: 75px;
     margin-left: 1px;
     font-family: $ff-alumni;
     font-size: 54px;
@@ -42,7 +41,7 @@
     grid-template-columns: 340px 240px 340px;
     grid-template-rows: repeat(2, auto);
     column-gap: 60px;
-    row-gap: 139px;
+    row-gap: 8px;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -113,12 +112,17 @@
 .features__item {
   display: grid;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content auto;
   column-gap: 31px;
   row-gap: 7px;
+
+  padding-top: 74px;
+  padding-bottom: 78px;
 
   @include vp-1199 {
     column-gap: 29px;
     row-gap: 4px;
+    padding: 0;
   }
 
   @include vp-767 {
@@ -140,6 +144,14 @@
     }
   }
 
+  &--upper {
+    border-bottom: 2px solid $color-crimson-opacity;
+
+    @include vp-1199 {
+      border-bottom: none;
+    }
+  }
+
   &--accent {
     position: relative;
     grid-column: 2 / 3;
@@ -148,7 +160,7 @@
     flex-direction: column;
     align-self: center;
     min-height: 307px;
-    margin-bottom: 23px;
+    margin-bottom: 9px;
     padding: 65px 34px 60px;
     text-align: center;
     color: $color-default-white;
@@ -214,33 +226,33 @@
       }
     }
 
-    &::after,
-    &::before {
-      position: absolute;
-      top: 50%;
-      width: 340px;
-      border-bottom: 2px solid $color-crimson-opacity;
-      content: "";
+    // &::after,
+    // &::before {
+    //   position: absolute;
+    //   top: 50%;
+    //   width: 340px;
+    //   border-bottom: 2px solid $color-crimson-opacity;
+    //   content: "";
 
-      @include vp-1199 {
-        display: none;
-      }
-    }
+    //   @include vp-1199 {
+    //     display: none;
+    //   }
+    // }
 
-    &::after {
-      right: 125%;
-    }
+    // &::after {
+    //   right: 125%;
+    // }
 
-    &::before {
-      left: 125%;
-    }
+    // &::before {
+    //   left: 125%;
+    // }
   }
 }
 
-.features__item:not(.features__item--accent) {
-  margin-bottom: 20px;
+// .features__item:not(.features__item--accent) {
+//   margin-bottom: 20px;
 
-  @include vp-1199 {
-    margin-bottom: 0;
-  }
-}
+//   @include vp-1199 {
+//     margin-bottom: 0;
+//   }
+// }

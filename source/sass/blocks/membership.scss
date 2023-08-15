@@ -192,7 +192,8 @@
 }
 
 .membership__element li:hover,
-.membership__element li:focus {
+.membership__element li:focus,
+.membership__element li:focus-within {
   border-width: 7px;
   border-style: solid;
   border-image: $torch-red-to-cobalt 1;

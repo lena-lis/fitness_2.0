@@ -2554,6 +2554,11 @@ button,
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
+.main-footer__nav-container a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
 .main-footer__nav-container a:focus {
   border-color: #ffffff;
   text-decoration: none;
@@ -2932,7 +2937,8 @@ button,
 }
 
 .membership__element li:hover,
-.membership__element li:focus {
+.membership__element li:focus,
+.membership__element li:focus-within {
   border-width: 7px;
   border-style: solid;
   -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
@@ -2940,7 +2946,8 @@ button,
 }
 
 .membership__element li:hover .membership__button,
-.membership__element li:focus .membership__button {
+.membership__element li:focus .membership__button,
+.membership__element li:focus-within .membership__button {
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
@@ -2948,7 +2955,8 @@ button,
 }
 
 .membership__element li:hover .membership__button:active,
-.membership__element li:focus .membership__button:active {
+.membership__element li:focus .membership__button:active,
+.membership__element li:focus-within .membership__button:active {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -3332,12 +3340,11 @@ button,
 }
 
 .features__container {
-  padding: 129px 163px 105px;
+  padding: 129px 163px 45px;
 }
 
 .features__container h2 {
   margin: 0 auto;
-  margin-bottom: 75px;
   margin-left: 1px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -3356,7 +3363,7 @@ button,
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
-  row-gap: 139px;
+  row-gap: 8px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -3409,14 +3416,24 @@ button,
   -ms-grid-columns: min-content 1fr;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
+  -ms-grid-rows: -webkit-min-content auto;
+  -ms-grid-rows: min-content auto;
+  grid-template-rows: -webkit-min-content auto;
+  grid-template-rows: min-content auto;
   -webkit-column-gap: 31px;
   -moz-column-gap: 31px;
   column-gap: 31px;
   row-gap: 7px;
+  padding-top: 74px;
+  padding-bottom: 78px;
 }
 
 .features__item--primary {
   padding-left: 18px;
+}
+
+.features__item--upper {
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .features__item--accent {
@@ -3435,7 +3452,7 @@ button,
   -ms-grid-row-align: center;
   align-self: center;
   min-height: 307px;
-  margin-bottom: 23px;
+  margin-bottom: 9px;
   padding: 65px 34px 60px;
   text-align: center;
   color: #ffffff;
@@ -3458,27 +3475,6 @@ button,
   letter-spacing: 2px;
   background-image: none;
   -webkit-text-fill-color: unset;
-}
-
-.features__item--accent::after,
-.features__item--accent::before {
-  position: absolute;
-  top: 50%;
-  width: 340px;
-  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-  content: "";
-}
-
-.features__item--accent::after {
-  right: 125%;
-}
-
-.features__item--accent::before {
-  left: 125%;
-}
-
-.features__item:not(.features__item--accent) {
-  margin-bottom: 20px;
 }
 
 .offer {
@@ -3842,7 +3838,7 @@ button,
 }
 
 .reviews {
-  padding-top: 120px;
+  padding-top: 119px;
   padding-bottom: 120px;
 }
 
@@ -4653,7 +4649,7 @@ button,
   }
 
   .coach__description {
-    padding-top: 50px;
+    padding-top: 54px;
   }
 
   .coach__description h4 {
@@ -4704,10 +4700,15 @@ button,
     -moz-column-gap: 29px;
     column-gap: 29px;
     row-gap: 4px;
+    padding: 0;
   }
 
   .features__item--primary {
     padding-left: 0;
+  }
+
+  .features__item--upper {
+    border-bottom: none;
   }
 
   .features__item--accent {
@@ -4735,15 +4736,6 @@ button,
     margin-left: -5px;
     font-size: 74px;
     letter-spacing: normal;
-  }
-
-  .features__item--accent::after,
-  .features__item--accent::before {
-    display: none;
-  }
-
-  .features__item:not(.features__item--accent) {
-    margin-bottom: 0;
   }
 
   .offer {
@@ -5570,7 +5562,7 @@ button,
   }
 
   .reviews {
-    padding-top: 63px;
+    padding-top: 60px;
   }
 
   .reviews h2 {
@@ -5784,11 +5776,6 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .main-footer__nav-container a:hover:not(.focus-visible) {
-    text-decoration: underline;
-    text-underline-offset: 10px;
   }
 
   .gym__video-button:hover:not(.focus-visible) {
